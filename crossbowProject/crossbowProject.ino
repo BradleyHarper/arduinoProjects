@@ -10,6 +10,7 @@
  int endPos=50;
  int pullTrigger;
  int servoDelay=25;
+ int calTime=500;
  
  boolean lockLow = true;
  boolean takeLowTime;
@@ -36,7 +37,7 @@ void setup() {
 
 void loop() {
 
-  delay(1000);
+  delay(calTime);
   trigServo.write(startPos);
   
   if(digitalRead(pirPin)== HIGH){
